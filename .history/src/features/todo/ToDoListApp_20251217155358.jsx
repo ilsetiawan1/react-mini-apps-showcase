@@ -1,0 +1,14 @@
+import React from 'react';
+import TodoInput from './TodoInput';
+
+const ToDoListApp = () => {
+  return (
+    <section>
+      <div>ToDoListApp</div>
+      <TodoInput/>
+      <todo
+    </section>
+  );
+};
+
+export default ToDoListApp;

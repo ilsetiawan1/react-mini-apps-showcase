@@ -1,0 +1,12 @@
+import React from 'react'
+import { PostContext } from '../../context/PostContext'
+
+const TodoInput = () => {
+  return (
+    <section>
+        <button >Klik saya</button>
+    </section>
+  )
+}
+
+export default TodoInput

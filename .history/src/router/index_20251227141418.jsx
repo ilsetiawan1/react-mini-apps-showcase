@@ -1,0 +1,38 @@
+import { createBrowserRouter } from 'react-router-dom';
+import RootLayouts from '../layouts/RootLayouts';
+
+// Page route
+import Dashboard from '../pages/Dashboard';
+// import ContactPage from '../pages/ContactPage';
+import AboutPage from '../pages/AboutPage';
+import ToDoListPage from '../pages/ToDoListPage'
+import CalculatorPage from '../pages/CalculatorPage'
+
+export const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <RootLayouts />,
+    children: [
+      {
+        path: '/',
+        element: <Dashboard />,
+      },
+      {
+        path: 'about',
+        element: <AboutPage />,
+      },
+      {
+        path: 'https://github.com/ilsetiawan1?tab=repositories',
+        // element: <ContactPage />,
+      },
+      {
+        path: 'todo-app',
+        element: <ToDoListPage />,
+      },
+      {
+        path: 'calculator-app',
+        element: <CalculatorPage />,
+      },
+    ],
+  },
+]);
