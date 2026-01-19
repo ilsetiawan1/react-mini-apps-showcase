@@ -1,0 +1,17 @@
+import React from 'react'
+import { NavLink } from 'react-router-dom'
+
+const navCategory = ({isActive}) => `px-4 py-2 rounded-lg transition-all ${isActive ? 'bg-slate-300' : 'text-black'}`
+
+const AnimeCategory = () => {
+
+  return (
+    <div className="flex justify-between items-center">
+      <NavLink  className={navCategory}>Semua</NavLink>
+      <NavLink to="top-anime" className={navCategory}>Top Anime</NavLink>
+      <NavLink className={navCategory}>Top Characters</NavLink>
+    </div>
+  );
+}
+
+export default AnimeCategory

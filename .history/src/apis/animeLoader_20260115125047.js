@@ -1,0 +1,7 @@
+export const getAnimeData = async () => {
+  // Get Data
+  const respTop = await fetch(`https://api.jikan.moe/v4/top/anime`);
+  }
+
+ 
+
