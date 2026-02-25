@@ -1,6 +1,17 @@
 import React from 'react';
 
 const Hero = () => {
+
+
+  const REACT_FUNDAMENTALS = [
+    { id: 1, name: '#FunctionalComponent' },
+    { id: 2, name: '#Props-Handling' },
+    { id: 3, name: '#ReactRouterV6' },
+    { id: 4, name: '#DataFetching' },
+    { id: 5, name: '#AsyncAwait' },
+    { id: 6, name: '#Destructuring' },
+    { id: 7, name: '#ConditionalRendering' },
+  ];
   return (
     <section
       className="
@@ -28,18 +39,18 @@ const Hero = () => {
 
       {/* Tags */}
       <div className="flex flex-wrap gap-3 mt-8">
-        {['#ContextAPI', '#ReactRouter', '#Immutability'].map((tag) => (
+        {REACT_FUNDAMENTALS.map((tag) => (
           <span
-            key={tag}
+            key={tag.id} 
             className="
-              px-4 py-1.5 rounded-full
-              bg-teal-500/20 text-teal-300
-              text-xs md:text:base font-medium
-              transition-transform duration-200
-              hover:scale-105
-            "
+        px-4 py-1.5 rounded-full
+        bg-teal-500/20 text-teal-300
+        text-xs md:text-base font-medium
+        transition-transform duration-200
+        hover:scale-105
+      "
           >
-            {tag}
+            {tag.name}
           </span>
         ))}
       </div>

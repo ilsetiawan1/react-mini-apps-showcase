@@ -22,9 +22,9 @@ const Header = () => {
         ${scrolled ? 'bg-white/80 backdrop-blur-xl shadow-md text-slate-800' : 'bg-slate-900 border border-slate-800 text-white'}
       `}
     >
-      <div className="max-w-7xl mx-auto px-4 md:px-16 py-4 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 h-[60px] sm:h-20  md:px-16 py-4 flex justify-between items-center">
         {/* Logo */}
-        <Link to="/" className="text-xl font-bold  transition">
+        <Link to="/" className="text-xl sm:text-2xl lg:text-3xl font-bold  transition">
           Lam<span className="font-extralight italic">.jsx</span>
         </Link>
 
@@ -34,10 +34,10 @@ const Header = () => {
             Home
           </Link> */}
           <a href="https://github.com/ilsetiawan1?tab=repositories" className="hover:text-amber-400 transition">
-            <FaGithub className="h-5 w-5" />
+            <FaGithub className="h-5 sm:h-10 w-5 sm:w-10" />
           </a>
           <a href="https://www.instagram.com/m.ilsetiawan1" className="hover:text-amber-400 transition">
-            <RiInstagramFill className="h-6 w-6" />
+            <RiInstagramFill className="h-5 sm:h-10 w-5 sm:w-10" />
           </a>
         </div>
       </div>

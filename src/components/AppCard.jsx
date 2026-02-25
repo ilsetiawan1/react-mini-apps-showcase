@@ -19,10 +19,10 @@ const AppCard = () => {
     },
     {
       id: 3,
-      name: 'AnimeHub App',
-      slug: 'anime-app',
+      name: 'Cinema TV App',
+      slug: 'cinematv-app',
       created: '14 Jan 2026',
-      description: 'A simple anime hub app built with React and using API https://jikan.moe/',
+      description: 'The ultimate destination for anime and movie enthusiasts. Fetches real-time data from Jikan and TMDB APIs with a fully responsive and clean UI.',
     },
     {
       id: 4,
