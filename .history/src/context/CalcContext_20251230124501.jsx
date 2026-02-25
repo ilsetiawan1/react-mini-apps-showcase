@@ -1,4 +1,0 @@
-
-
-const CalcContext = createContext(null);
-

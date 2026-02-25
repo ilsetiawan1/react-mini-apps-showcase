@@ -36,7 +36,7 @@ const CalcProvider = ({ children }) => {
     // console.log(result);
     const prevResult = display;
     setPrevDisplay(prevResult);
-    const result = eval(display);
+    const result = new Function(`return ${display}`)();
     console.log(result);
     setDisplay(String(result));
 
