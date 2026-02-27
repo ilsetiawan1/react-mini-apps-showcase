@@ -8,7 +8,7 @@ const AllData = () => {
 
   const baseImgUrl = import.meta.env.VITE_TMDB_BASE_IMG_URL;
 
-  const { topMovies, topAnimes } = loadaerData;
+  const { topMovies = [], topAnimes = [] } = loadaerData;
 
   return (
     <div className="">
@@ -16,7 +16,7 @@ const AllData = () => {
       <div>
         <h2 className=" font-bold text-lg sm:text-xl pt-5 text-slate-700 ml-2">Popular Movies</h2>
         <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-2">
-          {topMovies.slice(0, 10).map((item, index) => (
+          {topMovies?.slice(0, 10).map((item, index) => (
             <ContentCard
               key={item.id}
               item={item}
@@ -36,11 +36,11 @@ const AllData = () => {
       <div>
         <h2 className=" font-bold text-lg sm:text-xl pt-5 text-slate-700 ml-2">Popular Anime</h2>
         <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-2">
-          {topAnimes.slice(0, 10).map((item, index) => (
+          {topAnimes?.slice(0, 10).map((item, index) => (
             <ContentCard
               key={item.mal_id}
               item={item}
-              poster={item.images.jpg.image_url}
+              poster={item?.images?.jpg.image_url || '/placeholder-anime.jpg'}
               rate={item.score}
               date={item.year}
               overview={item.synopsis}

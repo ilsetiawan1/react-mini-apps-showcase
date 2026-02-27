@@ -9,7 +9,7 @@ const TopMovies = () => {
 
   const baseImgUrl = import.meta.env.VITE_TMDB_BASE_IMG_URL;
 
-  const { topMovies } = loaderData;
+  const { topMovies = []} = loaderData;
 
   return (
     <div>
